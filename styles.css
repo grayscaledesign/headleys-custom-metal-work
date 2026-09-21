@@ -215,8 +215,9 @@ footer p { margin: 0; }
   nav { display: none; position: absolute; top: 62px; left: 0; right: 0; padding: 18px; align-items: stretch; flex-direction: column; gap: 16px; border: 1px solid var(--line); background: #0d1218; }
   nav.open { display: flex; }
   .hero {
-    min-height: 780px;
-    padding: 170px 14px 96px;
+    min-height: 720px;
+    align-items: flex-start;
+    padding: 112px 14px 84px;
     background:
       linear-gradient(90deg, rgba(5,8,12,.96) 0%, rgba(5,8,12,.88) 62%, rgba(5,8,12,.55) 100%),
       linear-gradient(0deg, rgba(5,8,12,.94) 0%, rgba(5,8,12,.22) 55%, rgba(5,8,12,.32) 100%),
