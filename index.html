@@ -8,7 +8,7 @@
   <title>Headley's Custom Metal Work | Welding &amp; Fabrication</title>
   <link rel="icon" href="favicon.ico?v=23" sizes="any">
   <link rel="preload" as="image" href="assets/welder-hero-v4.jpg">
-  <link rel="stylesheet" href="styles.css?v=38">
+  <link rel="stylesheet" href="styles.css?v=39">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -235,7 +235,10 @@
           </a>
         </div>
       </div>
-      <form class="estimate-form" id="estimate-form" action="mailto:jeffrey@headleysmetal.com" method="post" enctype="text/plain">
+      <form class="estimate-form" id="estimate-form" action="https://formsubmit.co/jeffrey@headleysmetal.com" method="post">
+        <input type="hidden" name="_subject" value="New estimate request — Headley's Custom Metal Work">
+        <input type="hidden" name="_template" value="table">
+        <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <label>
             <span>Name</span>
@@ -268,7 +271,7 @@
           <textarea name="details" rows="5" placeholder="Describe the item, repair or fabrication work needed." required></textarea>
         </label>
         <button class="button button-primary estimate-submit" type="submit">Request an estimate</button>
-        <p class="form-note">Your email application will open with the request prepared for you to send.</p>
+        <p class="form-note form-status" id="estimate-status" role="status" aria-live="polite">Your request will be sent securely from this page.</p>
       </form>
     </section>
   </main>
@@ -278,6 +281,6 @@
     <p>Welding · Repair · Fabrication</p>
   </footer>
 
-  <script src="app.js?v=26"></script>
+  <script src="app.js?v=27"></script>
 </body>
 </html>

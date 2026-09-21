@@ -187,6 +187,12 @@ h1 span { color: var(--blue-bright); }
 .estimate-form textarea::placeholder { color: #697681; }
 .estimate-form select { appearance: auto; }
 .estimate-submit { width: 100%; margin-top: 2px; cursor: pointer; }
+.estimate-submit:disabled { cursor: wait; opacity: .72; }
+.form-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.form-status { min-height: 1.25em; }
+.form-status.is-pending { color: #aeb9c3; }
+.form-status.is-success { color: #76d69a; }
+.form-status.is-error { color: #ff9d8f; }
 .form-note { margin: -4px 0 0; color: #7f8d98; font-size: .78rem; line-height: 1.45; }
 
 footer { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; padding: 24px 0 42px; display: flex; justify-content: space-between; gap: 24px; border-top: 1px solid var(--line); color: #74828d; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
